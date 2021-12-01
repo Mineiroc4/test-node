@@ -1,6 +1,4 @@
 function findBestSpot(landWidth, landHeight, exploitationWidth, exploitationHeight, goldMines) {
-  //console.log(landWidth)
-  //console.log(landHeight)
   function buildMatrix(landWidth, landHeight, goldMines) {
     let board = [];
 
@@ -48,8 +46,6 @@ function findBestSpot(landWidth, landHeight, exploitationWidth, exploitationHeig
     }
 }
 
-
-
 let result = findBestSpot(6, 4, 2, 2, [{x: 1, y: 0}, {x: 5, y: 0}, {x:2, y:2}, {x:3,y:3}]);
 console.log(result);
   return {
@@ -60,6 +56,5 @@ console.log(result);
     goldMines : 0
   }
 }
-findBestSpot(6,4,2,2,[{x:1,y:0},{x:5,y:0}, {x:2,y:2},{x:3,y:3}]) 
-
+findBestSpot(6,4,2,2,[{x:1,y:0},{x:5,y:0}, {x:2,y:2},{x:3,y:3}])
 module.exports = findBestSpot;
